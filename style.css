@@ -1,0 +1,71 @@
+@keyframes active-bg {
+  10% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 10%, #fff);
+  }
+  20% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 20%, #fff);
+  }
+  30% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 30%, #fff);
+  }
+  40% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 40%, #fff);
+  }
+  50% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 50%, #fff);
+  }
+  60% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 60%, #fff);
+  }
+  70% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 70%, #fff);
+  }
+  80% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 80%, #fff);
+  }
+  90% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 90%, #fff);
+  }
+  100% {
+    background: linear-gradient(to right, rgb(151, 206, 120) 100%, #fff);
+  }
+}
+
+.root {
+  margin: 0 auto;
+  max-width: 30vw;
+}
+.table {
+  outline: 1px solid black;
+  margin-bottom: 30px;
+}
+.row {
+  display: flex;
+}
+.row:nth-child(2n) {
+  background-color: rgb(230, 230, 230);
+}
+.column {
+  padding: 10px;
+  width: 33.33%;
+  cursor: pointer;
+  outline: 1px solid black;
+}
+.column:hover {
+  box-shadow: 0px 0px 10px rgb(151, 206, 120);
+  transition: all 0.06s linear;
+}
+.active {
+  animation: active-bg 0.3s linear forwards;
+}
+.data-block {
+  text-align: center;
+  padding: 5px;
+  max-width: 33.33%;
+  min-height: 20px;
+  border: 1px solid black;
+  cursor: default;
+}
+.data-block:hover {
+  opacity: 0;
+}
